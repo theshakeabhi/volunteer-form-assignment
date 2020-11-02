@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Volunteer Signup</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon prefetch" href="logo/q.ico" type="image/x-icon"> 
+</head>
+
+<body>
+    <form action="html files/thankyou.html">
+        <h1>Signup Form for a Volunteer Program</h1>
+        <p style="text-align: center;">Required fields are followed by <strong><abbr title="required">*</abbr></strong></p>
+            <p>
+              <label for="fname">
+                <span>First Name: </span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+              <input type="text" id="fname" name="fname" required>
+            </p>
+            <p>
+              <label for="lname">
+                <span>Last Name: </span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+              <input type="text" id="lname" name="lname" required>
+            </p>
+            <p>
+              <label for="mail">
+                <span>E-mail: </span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+              <input type="email" id="mail" name="usermail" required>
+            </p>
+            <p>
+              <label for="Age">
+                <span>Age:</span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+                <input type="number" id="age" name="age" required>
+            </p>
+            <p>
+              <label for="carrier">
+                <span>Mobile Carrier:</span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+              <select id="carrier" name="carrier" required>
+                <option value=""></option> 
+                <option value="bnsl">BSNL</option>
+                <option value="jio">Jio</option>
+                <option value="airtel">Airtel</option>
+                <option value="vi">Vi</option>
+              </select>
+            </p>
+            <p>
+              <label for="license">
+                <span>Do you have a Motor Vehicle License?:</span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+                <select name="license" id="license" required>
+                    <option value=""></option> 
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </p>
+            <p>
+              <label for="findus">
+                <span>How did you find out about Us?</span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+              <select id="findus" name="findus" required>
+                <option value=""></option> 
+                <option value="friend">Through a friends.</option>
+                <option value="newsletter">Through Newsletter.</option>
+                <option value="ad">Through Advertisement.</option>
+                <option value="others">Others.</option>
+              </select>
+            </p>
+            <p>
+                <label for="skills">
+                    <span>Skills you can offer:</span>
+                    <strong><abbr title="required">&nbsp;</abbr></strong>
+                </label>
+                <textarea id="skills" name="skills"></textarea>
+            </p>
+        <section>
+            <p style="text-align:center;"> <button type="submit">Submit</button> </p>
+        </section>
+    </form>
+</body>
+
+</html>

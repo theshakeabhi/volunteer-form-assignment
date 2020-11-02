@@ -1,0 +1,57 @@
+h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+form {
+    
+    margin: 0 auto;
+    width: 450px;
+    padding: 1em;
+    border: 3px solid #008B8B;
+    border-radius: 1em;
+}
+
+label span {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+}
+
+input, textarea, option {
+    font: 1em sans-serif;
+    width: 250px;
+    box-sizing: border-box;
+    border: 3px solid #008B8B;
+}
+
+input[type=checkbox] {
+    width: auto;
+    border: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #282C35;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+}
+
+button {
+    height: 30px;
+
+}
+
+@font-face {
+    font-family: JS;
+    src: url(/fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+
+*{  
+    font-family: JS;
+    background-color: #F5F5F5;
+    color: #282C35;
+}
