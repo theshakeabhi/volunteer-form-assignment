@@ -6,10 +6,11 @@
     <title>Volunteer Signup</title>
     <link href="style.css" rel="stylesheet">
     <link rel="shortcut icon prefetch" href="logo/q.ico" type="image/x-icon"> 
+    <script src="script/index.js"></script>
 </head>
 
 <body>
-    <form action="html files/thankyou.html">
+    <form action="html files/thankyou.html" name="volunteerSignup" onsubmit="">
         <h1>Signup Form for a Volunteer Program</h1>
         <p style="text-align: center;">Required fields are followed by <strong><abbr title="required">*</abbr></strong></p>
             <p>
@@ -38,7 +39,7 @@
                 <span>Age:</span>
                 <strong><abbr title="required">*</abbr></strong>
               </label>
-                <input type="number" id="age" name="age" required>
+                <input type="number" id="age" name="age" min="18" required>
             </p>
             <p>
               <label for="carrier">
@@ -58,11 +59,24 @@
                 <span>Do you have a Motor Vehicle License?:</span>
                 <strong><abbr title="required">*</abbr></strong>
               </label>
-                <select name="license" id="license" required>
+                <select name="license" id="license" required oninput="showHide()">
                     <option value=""></option> 
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
                 </select>
+            </p>
+            
+            <p id="vehicle">
+              <label for="typeofvehicle">
+                <span>Type of Vechicle:</span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+              <select id="carrier" name="carrier" required>
+                <option value=""></option> 
+                <option value="suv">SUV</option>
+                <option value="sedan">SEDAN</option>
+                <option value="sport">Sport</option>
+              </select>
             </p>
             <p>
               <label for="findus">
@@ -78,11 +92,14 @@
               </select>
             </p>
             <p>
-                <label for="skills">
-                    <span>Skills you can offer:</span>
-                    <strong><abbr title="required">&nbsp;</abbr></strong>
-                </label>
-                <textarea id="skills" name="skills"></textarea>
+              <label for="skills">
+                  <span>Skills you can offer:</span>
+                  <strong><abbr title="required">&nbsp;</abbr></strong>
+              </label>
+              <textarea id="skills" name="skills"></textarea>
+            </p>
+            <p>
+              <input type="checkbox" name="checkbox" value="check" id="agree" required> I have read and agree to the Terms and Conditions and Privacy Policy
             </p>
         <section>
             <p style="text-align:center;"> <button type="submit">Submit</button> </p>

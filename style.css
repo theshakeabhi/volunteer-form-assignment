@@ -45,9 +45,13 @@ button {
 
 }
 
+#vehicle {
+    display: none;
+}
+
 @font-face {
     font-family: JS;
-    src: url(/fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+    src: url(./fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
 }
 
 *{  
